@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="calculator">
+    <input type="text" id="display">
+    <table>
+      <tr>
+        <td><button type="button" id="clear" onclick="erase()">C</button></td>
+        <td><button type="button" id="subtract" onclick="GetResult('-')">-</button></td>
+        <td><button type="button" id="multiply" onclick="GetResult('*')">*</button></td>
+        <td><button type="button" id="divide" onclick="GetResult('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="7" onclick="GetResult('7')">7</button></td>
+        <td><button type="button" id="8" onclick="GetResult('8')">8</button></td>
+        <td><button type="button" id="9" onclick="GetResult('9')">9</button></td>
+        <td><button type="button" id="equals" onclick="equal('=')">=</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="4" onclick="GetResult('4')">4</button></td>
+        <td><button type="button" id="5" onclick="GetResult('5')">5</button></td>
+        <td><button type="button" id="6" onclick="GetResult('6')">6</button></td>
+        <td><button type="button" id="add" onclick="GetResult('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="1" onclick="GetResult('1')">1</button></td>
+        <td><button type="button" id="2" onclick="GetResult('2')">2</button></td>
+        <td><button type="button" id="3" onclick="GetResult('3')">3</button></td>
+        <td><button type="button" id="0" onclick="GetResult('0')">0</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

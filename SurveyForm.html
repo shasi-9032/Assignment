@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+</head>
+<body>
+<h1>Survey Form</h1>
+
+<form>
+    <table>
+         <caption>Customer Survey Form</caption>
+        <tr>
+            <td align="right">First Name :</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td align="right">Last Name :</td>
+            <td><input type="text" placeholder="Last Name" required></td>
+        </tr>
+        <tr>
+            <td align="right">Date of Birth :</td>
+            <td><input type="date" required></td>
+        </tr>
+        <tr>
+            <td align="right">Country :</td>
+            <td><select id="countries" name="countries" required>
+                                <option >---Select Country---</option>
+                                <option>India</option>
+                                <option>Australia</option>
+                                <option>England</option>
+                                <option>New Zealand</option>
+                                <option>South Africa</option>
+                                <option>Pakistan</option>
+                                <option>Afghanistan</option>
+                                <option>Bangladesh</option>
+                                <option>Sri lanka</option>
+                              </select></td>
+        </tr>
+        <tr>
+            <td align="right">Gender :</td>
+            <td><input type="radio" name="gender" required>Male
+                            <input type="radio" name="gender">Female
+                            <input type="radio" name="gender">Others</td>
+        </tr>
+        <tr>
+            <td align="right">Profession :</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td align="right">Email :</td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td align="right">Mobile No :</td>
+            <td><input type="number" required></td>
+        </tr>
+        <tr>
+            <td align="middle"><button value="submit" id="sub" onclick="submitForm()">SUBMIT</button></td>
+            <td><button value="reset" id="res">RESET</button></td>
+        </tr>
+</table>
+</form>
+
+</body>
+</html>
